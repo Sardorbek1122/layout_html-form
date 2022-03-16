@@ -52,11 +52,11 @@
           >
         </label>
         <br>
-        <label class="form-label" for="dob">
+        <label class="form-label" for="date-of-birth">
           Full date of birth:
           <input 
             type="date" 
-            name="dob" 
+            name="data-of-birth" 
             required
           >
         </label>
@@ -123,6 +123,7 @@
           What time do you go to bed? 
           <input 
             type="time"
+            step="number"
           >
         </label>
         <br>
@@ -133,9 +134,9 @@
             id="cars" 
             multiple 
           >
-            <option value="BMW">BMW</option>
-            <option value="AUDI">Audi</option>
-            <option value="LADA">Lada</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
           </select>
         </label>
         <br>
@@ -175,11 +176,8 @@
         </label>
       </fieldset>
       
-      <label class="form-label last-child" for="submit">
-        <input 
-        type="submit" 
-        name="submit"
-        >
+      <label class="form-label last-child" for="submit" id="submit">
+        <button type="submit">Submit</button>
       </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>
