@@ -1,13 +1,17 @@
 /* styles go here */
 .box-container {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form-label {
-display: inline-block;
-margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .form-label:last-child {
-margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.last-child {
+  margin-bottom: 0;
 }

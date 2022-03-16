@@ -17,7 +17,7 @@
         <label 
         class="form-label" 
         for="surname">
-          "Surname:"
+          Surname:
           <input 
             type="text" 
             autocomplete="off" 
@@ -29,7 +29,7 @@
         </label>
         <br>
         <label class="form-label" for="name">
-          "Name:"
+          Name:
           <input 
             type="text" 
             autocomplete="off" 
@@ -41,7 +41,7 @@
         </label>
         <br>
         <label class="form-label" for="age">
-          "How old are you? "
+          How old are You? 
           <input 
             type="number" 
             value="12" 
@@ -53,18 +53,24 @@
         </label>
         <br>
         <label class="form-label" for="dob">
-          "Full data of birth"
+          Full date of birth:
           <input 
             type="date" 
             name="dob" 
             required
           >
         </label>
+        <br>
+        <label class="form-label" for="agree">
+          I accept the term of the agreement
+          <input type="checkbox" id="agree">
+        </label>
       </fieldset>
+
       <fieldset class="box-container">
         <legend>Registration</legend>
         <label class="form-label" for="email">
-          "Email:"
+          E-mail:
           <input 
             type="email" 
             placeholder="email@example.com" 
@@ -74,7 +80,7 @@
         </label>
         <br>
         <label class="form-label" for="password">
-          "Password"
+          Password:
           <input  
             type="password" 
             name="password" 
@@ -83,17 +89,18 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="box-container">
         <legend>An interesting fact about you!</legend>
         <label class="form-label" for="fact">
-          "Do you love cats? "
+          Do you love cats? 
           <label class="form-label" for="yes">
             <input
               type="radio" 
               name="yes" 
               value="yes"
             >
-            "Yes "
+            Yes
           </label>
           <label class="form-label" for="no">
             <input 
@@ -101,39 +108,39 @@
               name="no" 
               value="no"
             >
-            "No"
+            No
           </label>
         </label>
         <br>
         <label class="form-label" for="color">
-          "What is your favorite color?"
+          What is your favorite color?
           <input 
             type="color"
           >
         </label>
         <br>
         <label class="form-label" for="time">
-          "What time do you got to bed? "
+          What time do you go to bed? 
           <input 
             type="time"
           >
         </label>
         <br>
         <label class="form-label" for="cars">
-          "What are your favorite brand of cars? "
+          What are your favorite brand of cars? 
           <select 
             name="cars" 
             id="cars" 
             multiple 
           >
             <option value="BMW">BMW</option>
-            <option value="AUDI">AUDI</option>
-            <option value="LADA">LADA</option>
+            <option value="AUDI">Audi</option>
+            <option value="LADA">Lada</option>
           </select>
         </label>
         <br>
         <label class="form-label" for="rating">
-          "How do you rate our work? "
+          How do you rate our work? 
           <input 
             type="range" 
             name="range" 
@@ -142,10 +149,11 @@
         </label>
         <br>
       </fieldset>
+
       <fieldset class="box-container">
         <legend>Additional info:</legend>
         <label class="form-label" for="comment">
-          "Comments"
+          Comments
           <textarea 
             name="comment" 
             id="comment" 
@@ -156,7 +164,7 @@
         </label>
         <br>
         <label class="form-label" for="recommendation">
-          "Would you recommend us? "
+          Would you recommend us? 
           <select 
           name="recommendation" 
           id="recommendation" 
@@ -166,7 +174,8 @@
           </select>
         </label>
       </fieldset>
-      <label class="form-label" for="submit">
+      
+      <label class="form-label last-child" for="submit">
         <input 
         type="submit" 
         name="submit"
