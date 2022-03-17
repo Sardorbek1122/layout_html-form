@@ -27,7 +27,7 @@
             required
           >
         </label>
-        <br>
+        
         <label class="form-label" for="name">
           Name:
           <input 
@@ -39,7 +39,7 @@
             required
           >
         </label>
-        <br>
+        
         <label class="form-label" for="age">
           How old are You? 
           <input 
@@ -51,7 +51,7 @@
             required
           >
         </label>
-        <br>
+        
         <label class="form-label" for="date-of-birth">
           Full date of birth:
           <input 
@@ -60,7 +60,7 @@
             required
           >
         </label>
-        <br>
+        
         <label class="form-label" for="agree">
           I accept the term of the agreement
           <input type="checkbox" id="agree">
@@ -78,7 +78,7 @@
             required
           >
         </label>
-        <br>
+        
         <label class="form-label" for="password">
           Password:
           <input  
@@ -92,33 +92,30 @@
 
       <fieldset class="box-container">
         <legend>An interesting fact about you!</legend>
-        <label class="form-label" for="fact">
-          Do you love cats? 
-          <label class="form-label" for="yes">
-            <input
-              type="radio" 
-              name="yes" 
-              value="yes"
-            >
-            Yes
-          </label>
-          <label class="form-label" for="no">
-            <input 
-              type="radio" 
-              name="no" 
-              value="no"
-            >
-            No
-          </label>
-        </label>
-        <br>
+        <div class="cat-container">
+          <label class="cats" for="fact">Do you love cats?</label>
+          <input 
+            type="radio" 
+            name="yes" 
+            value="yes" 
+            id="yes-cat"
+          >
+          <label for="yes-cat">Yes</label>
+          <input 
+            type="radio" 
+            name="no" 
+            id="no-cat"
+          >
+          <label for="no-cat">No</label>
+        </div>
+      
         <label class="form-label" for="color">
           What is your favorite color?
           <input 
             type="color"
           >
         </label>
-        <br>
+        
         <label class="form-label" for="time">
           What time do you go to bed? 
           <input 
@@ -126,7 +123,7 @@
             step="number"
           >
         </label>
-        <br>
+        
         <label class="form-label" for="cars">
           What are your favorite brand of cars? 
           <select 
@@ -139,7 +136,7 @@
             <option value="lada">Lada</option>
           </select>
         </label>
-        <br>
+        
         <label class="form-label" for="rating">
           How do you rate our work? 
           <input 
@@ -148,7 +145,7 @@
             value="0" 
           >
         </label>
-        <br>
+        
       </fieldset>
 
       <fieldset class="box-container">
@@ -163,7 +160,7 @@
           >
           </textarea>
         </label>
-        <br>
+        
         <label class="form-label" for="recommendation">
           Would you recommend us? 
           <select 

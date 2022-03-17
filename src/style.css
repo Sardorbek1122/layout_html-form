@@ -8,6 +8,11 @@
   margin-bottom: 10px;
 }
 
+.cat-container {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .form-label:last-child {
   margin-bottom: 0;
 }
