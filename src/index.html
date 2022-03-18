@@ -14,53 +14,54 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="box-container">
         <legend>Personal information</legend>
-        <label 
-        class="form-label" 
+        <label
+        class="form-label"
         for="surname">
           Surname:
-          <input 
-            type="text" 
-            autocomplete="off" 
-            name="surname" 
-            minlength="2" 
-            maxlength="30" 
+          <input
+            type="text"
+            autocomplete="off"
+            id="surname"
+            minlength="2"
+            maxlength="30"
             required
           >
         </label>
-        
+
         <label class="form-label" for="name">
           Name:
-          <input 
-            type="text" 
-            autocomplete="off" 
-            name="name" 
-            minlength="2" 
-            maxlength="30" 
+          <input
+            type="text"
+            autocomplete="off"
+            id="name"
+            minlength="2"
+            maxlength="30"
             required
           >
         </label>
-        
+
         <label class="form-label" for="age">
-          How old are You? 
-          <input 
-            type="number" 
-            value="12" 
-            min="1" 
-            max="100" 
-            name="age" 
+          How old are You?
+          <input
+            type="number"
+            value="12"
+            id="age"
+            step="1"
+            min="1"
+            max="100"
             required
           >
         </label>
-        
+
         <label class="form-label" for="date-of-birth">
           Full date of birth:
-          <input 
-            type="date" 
-            name="data-of-birth" 
+          <input
+            type="date"
+            name="data-of-birth"
             required
           >
         </label>
-        
+
         <label class="form-label" for="agree">
           I accept the term of the agreement
           <input type="checkbox" id="agree">
@@ -71,20 +72,22 @@
         <legend>Registration</legend>
         <label class="form-label" for="email">
           E-mail:
-          <input 
-            type="email" 
-            placeholder="email@example.com" 
-            name="email" 
+          <input
+            type="email"
+            id="email"
+            placeholder="email@example.com"
+            name="email"
             required
           >
         </label>
-        
+
         <label class="form-label" for="password">
           Password:
-          <input  
-            type="password" 
-            name="password" 
-            minlength="8" 
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="8"
             required
           >
         </label>
@@ -94,87 +97,91 @@
         <legend>An interesting fact about you!</legend>
         <div class="cat-container">
           <label class="cats" for="fact">Do you love cats?</label>
-          <input 
-            type="radio" 
-            name="yes" 
-            value="yes" 
+          <input
+            type="radio"
+            name="yes"
+            value="yes"
             id="yes-cat"
           >
           <label for="yes-cat">Yes</label>
-          <input 
-            type="radio" 
-            name="no" 
+          <input
+            type="radio"
+            name="no"
             id="no-cat"
           >
           <label for="no-cat">No</label>
         </div>
-      
+
         <label class="form-label" for="color">
           What is your favorite color?
-          <input 
+          <input
             type="color"
+            id="color"
           >
         </label>
-        
+
         <label class="form-label" for="time">
-          What time do you go to bed? 
-          <input 
+          What time do you go to bed?
+          <input
             type="time"
-            step="number"
+            id="time"
+            step="2"
+            name="time"
           >
         </label>
-        
+
         <label class="form-label" for="cars">
-          What are your favorite brand of cars? 
-          <select 
-            name="cars" 
-            id="cars" 
-            multiple 
+          What are your favorite brand of cars?
+          <select
+            name="cars"
+            id="cars"
+            multiple
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
           </select>
         </label>
-        
+
         <label class="form-label" for="rating">
-          How do you rate our work? 
-          <input 
-            type="range" 
-            name="range" 
-            value="0" 
+          How do you rate our work?
+          <input
+            type="range"
+            name="range"
+            id="rating"
+            value="0"
           >
         </label>
-        
+
       </fieldset>
 
       <fieldset class="box-container">
         <legend>Additional info:</legend>
         <label class="form-label" for="comment">
           Comments
-          <textarea 
-            name="comment" 
-            id="comment" 
-            cols="20" 
+          <textarea
+            name="comment"
+            id="comment"
+            cols="20"
             rows="2"
           >
           </textarea>
         </label>
-        
+
         <label class="form-label" for="recommendation">
-          Would you recommend us? 
-          <select 
-          name="recommendation" 
-          id="recommendation" 
+          Would you recommend us?
+          <select
+            name="recommendation"
+            id="recommendation"
           >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
         </label>
       </fieldset>
-      
-      <label class="form-label last-child" for="submit" id="submit">
-        <button type="submit">Submit</button>
+
+      <label class="form-label last-child" for="submit">
+        <button type="submit" id="submit">Submit</button>
       </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>
